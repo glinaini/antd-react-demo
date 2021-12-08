@@ -1,0 +1,58 @@
+
+.contentWrap {
+  display: grid;
+  place-items: center;
+  // grid-template-columns: 1fr 1fr;  /* 将应用网格中的每个单元格，也就是说单元格的内容都会居中 */
+}
+
+.isParentWrap{
+  width: 300px;
+  height: 200px;
+  background-color: #ccc;
+  display:flex;
+  .isChildWrap {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    margin: auto;
+  }
+}
+
+.ulAndLiWrap{
+  ul{
+    list-style:none;
+    padding: 0;
+  }
+  li{
+    color:#222;
+    &::before{
+      content:'>'; // 改了li的点点为'>'
+      color:'#ccc';
+      margin-right: 0.5em;
+    }
+    
+  }
+  li::marker{
+    color: #ccc;
+  }
+}
+
+
+.badge{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.isbackground{
+  height: 50px;
+}
+
+.elementIsBackground{
+  // .isbackground;
+  width: 300px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: round;
+  background-image: url('../../assets/images/isHamburg.png');
+}

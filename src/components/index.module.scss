@@ -1,0 +1,20 @@
+.allWrap {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  .avatarImgWrap{
+    width: 100px;
+    list-style: 64px;
+  }
+  .avatarImg {
+    font-size: 14px!important;
+  }
+}
+
+.logoWrap {
+  display: flex;
+    justify-content: center;
+    line-height: 32px;
+    color: white;
+    font-size: 16px;
+}
